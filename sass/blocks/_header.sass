@@ -1,0 +1,218 @@
+.header
+  padding-top: 16px
+  margin-bottom: 24px
+.logo
+  margin-right: 24px
+  &-link
+    width: 139px
+    height: 25px
+    display: flex
+    background-image: url(../img/Logo.svg)
+    background-repeat: no-repeat
+
+    background-size: 139px
+  &-image
+    max-width: 139px
+.nav
+  position: relative
+  margin-right: auto
+  &::before
+    position: absolute
+    content: ''
+    height: 32px
+    width: 1px
+    top: -7px
+    left: 0
+    background-color: #CFD4E9
+  // &::after
+  //   position: absolute
+  //   content: ''
+  //   width: 4px
+  //   height: 72px
+  //   background-color: $blue
+  //   top: 0
+  //   left: 0
+  //   transform: rotate(90.00deg)
+  //   z-index: 20
+  &-list
+    display: flex
+    align-items: center
+    margin-left: 24px
+    &__item
+      display: flex
+      align-items: center
+      margin-right: 24px
+      &:last-child
+        margin-right: 0
+
+    &__link
+      transition: .3s
+      position: relative
+      &:hover
+        color: var(--text-light)
+
+  &-icon
+    width: 20px
+    margin-right: 8px
+.dashboard
+  &-wrapper
+    background-color: var(--bg-wrap-light)
+    padding: 16px
+    border-radius: 16px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-form
+    display: flex
+    align-items: center
+    position: relative
+    height: 32px
+    width: 349px
+
+  &-input
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url(../img/search.svg)
+    background-repeat: no-repeat
+    padding: 10px 160px 10px 42px
+    background-position: 10px
+    border-radius: 8px
+    background-color: var(--button-color-light)
+    width: 332px
+    font-size: 12px
+    font-weight: 400
+    line-height: 100%
+    color: var(--text-light)
+    height: 32px
+  &-button
+    padding: 10px 16px 10px 16px
+    background-color: $blue
+    color: $darkblue
+    font-weight: 600
+    margin-right: 16px
+    outline: 1px solid $darkblue
+  &-profile
+    cursor: pointer
+    outline: 1px solid $darkblue
+    border-radius: 8px
+    width: 32px
+    height: 32px
+    padding: 4px
+    background-color: #E6EBFF
+
+.dropdown
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 2
+  max-width: 116px
+  margin-right: 16px
+  &-content
+    display: none
+    flex-direction: column
+    align-items: center
+    padding: 16px
+    background-color: $darkblue
+    position: absolute
+    top: 25px
+    z-index: 1
+    border-bottom-right-radius: 8px
+    border-bottom-left-radius: 8px
+    font-size: 14px
+    width: 100%
+    z-index: 0
+  &-link
+    color: $greybtn
+    margin-bottom: 16px
+.dropbtn
+  background-image: url(../img/dropdown.svg)
+  background-color: $darkblue
+  color: $greybtn
+  z-index: 2
+  position: relative
+  margin-right: 16px
+  &::before
+    position: absolute
+    content: ''
+    background-image: url(../img/dropdown-arrow.svg)
+    background-repeat: no-repeat
+    width: 8px
+    height: 5px
+    top: 50%
+    transform: translateY(-50%)
+    right: 16px
+    transition: .3s
+  &:hover .dropdown-content
+    display: flex
+
+
+.dropbtn2
+  background-image: url(../img/ethereum.svg)
+  position: relative
+  color: $darkblue
+  background-color: #E6EBFF
+  outline: 1px solid $darkblue
+  z-index: 2
+
+  &::before
+    position: absolute
+    content: ''
+    background-image: url(../img/dropdown-arrow2.svg)
+    background-repeat: no-repeat
+    width: 8px
+    height: 5px
+    top: 50%
+    transform: translateY(-50%)
+    right: 16px
+    transition: .3s
+.dropdown2
+  position: relative
+  max-width: 121px
+  margin-right: 16px
+
+  &-content
+    position: absolute
+    display: none
+    flex-direction: column
+    align-items: flex-start
+    padding: 16px
+    background-color: #E6EBFF
+    top: 25px
+    right: 0
+    z-index: 1
+    border-bottom-right-radius: 8px
+    border-bottom-left-radius: 8px
+    font-size: 14px
+    width: 100%
+    z-index: 1
+
+  &-link
+    color: $darkblue
+    background-image: url(../img/ethereum.svg)
+    background-repeat: no-repeat
+    background-size: 16px
+    background-position: left
+    padding-left: 30px
+    text-align: left
+.dropdowns
+
+  border-radius: 8px
+  padding-left: 38px
+  padding-right: 30px
+  font-size: 12px
+  font-weight: 400
+  line-height: 100%
+  background-repeat: no-repeat
+  background-size: 16px
+  background-position: 13px
+  width: 100%
+.active-after
+  position: absolute
+  content: ''
+  height: 4px
+  background-color: #4FDFFF
+  bottom: 37px
+  left: 6%
+  width: 42px
+  transition: width 0.3s ease, left 0.3s ease

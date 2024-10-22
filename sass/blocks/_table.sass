@@ -1,0 +1,244 @@
+.table
+  &-after
+    position: relative
+
+    &::before
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: var(--after)
+      top: 48px
+      left: 0
+      right: 0
+    &::after
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: var(--after)
+      top: 112px
+      left: 0
+      right: 0
+  &-wrapper
+    display: flex
+    flex-direction: column
+    padding: 16px
+    border-radius: 16px
+    margin-top: 24px
+    overflow: hidden
+  &-toptab
+    display: flex
+    position: relative
+    margin-bottom: 30px
+  &-bottomtab
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 32px
+    &__tabs
+      display: flex
+      align-items: center
+      border-radius: 8px
+      background-color: var(--button-color-light)
+      padding: 4px
+      cursor: pointer
+
+    &__tab
+      font-size: 12px
+      font-weight: 500
+      color: $grey
+      margin-right: 8px
+    &-icon
+      border: 1px solid $darkblue
+      border-radius: 8px
+      background: var(--button-color-light)
+      // width: 32px
+      // height: 32px
+      padding: 6px
+      display: flex
+      cursor: pointer !important
+    &__icon
+      width: 20px
+      height: 20px
+      cursor: pointer
+
+  &-list
+    &__item
+      font-size: 14px
+      font-weight: 400
+      margin-right: 39px
+      position: relative
+      cursor: pointer
+      color: $grey
+      &__num
+        &::before
+          position: absolute
+          content: '0'
+          // width: 19px
+          // height: 18px
+          border-radius: 4px
+          background-color: $darkblue
+          color: $greybtn
+          padding: 4px 6px
+          font-size: 10px
+          top: 0
+          right: -24px
+  &-block
+    &__titles
+      display: inline-block
+      position: relative
+      padding-bottom: 16px
+      &::after
+        content: ''
+        position: absolute
+        width: 100vw
+        height: 1px
+        background-color: var(--after)
+        left: -20px
+        bottom: 0
+
+    &__title
+      color: $grey
+      font-size: 14px
+      font-weight: 400
+      min-width: 132px !important
+      text-align: left
+    &__content
+      // max-width: 1856px
+      display: inline-block
+      position: relative
+      padding-top: 16px
+      padding-bottom: 16px
+      width: 100%
+      &::after
+        content: ''
+        position: absolute
+        width: 100vw
+        height: 1px
+        background-color: var(--after)
+
+        left: -20px
+        bottom: 0
+      &--end
+        &::after
+          display: none
+    &__text
+      width: 132px
+      text-align: left
+      font-size: 14px
+      font-weight: 500
+
+      &-status
+        padding: 4px 6px !important
+        color: #FF9332
+        font-size: 10px
+        text-transform: uppercase
+        font-weight: 500
+        line-height: 10px
+        background-color: rgba(255, 147, 50, 0.2)
+        max-width: 98px
+        border-radius: 4px
+        max-height: 18px !important
+        &--2
+          color: #2BB48A
+          background-color: rgba(43, 180, 138, 0.2)
+          max-width: 39px
+        &--3
+          color: #EC5A7D
+          background-color: rgba(236, 90, 125, 0.2)
+          max-width: 65px
+        &--4
+          color: #2BB48A
+          background-color: rgba(43, 180, 138, 0.2)
+          max-width: 45px
+        &--5
+          color: #3396FF
+          background-color: rgba(51, 150, 255, 0.2)
+          max-width: 56px
+
+    &__button
+      position: absolute
+      left: 1617px
+      top: 18px
+
+      &--cancel
+        max-width: 69px
+        left: 1752px !important
+        top: 18px
+        position: absolute
+
+.active-table
+  background-color: $darkblue
+  padding: 6px 8px
+  color: $greybtn
+  border-radius: 6px
+
+.checkbox-input
+  display: none
+  &:checked + label .checkbox
+    &:after
+      transform: translate(-50%, -50%)
+      opacity: 1
+.checkbox-input-2, .checkbox-input-3, .checkbox-input-4, .checkbox-input-5, .checkbox-input-6
+  display: none
+  &:checked + label .checkbox
+    &:after
+      transform: translate(-50%, -50%)
+      opacity: 1
+
+.checkbox
+  cursor: pointer
+  background-color: #E6EBFF
+  border-radius: 4px
+  width: 16px
+  height: 16px
+  display: inline-block
+  position: relative
+  margin-right: 16px
+  top: 2px
+
+  &:after
+    content: ''
+    background-image: url(../img/check.svg)
+    background-repeat: no-repeat
+    background-position: center
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    opacity: 0
+    width: 16px
+    height: 16px
+    background-color: $blue
+    border-radius: 3px
+    transition: 0.3s
+.button
+  &-table
+    display: inline-block
+    background-color: $darkblue
+    color: $greybtn
+    // width: 102px
+    top: -7px
+    position: absolute
+    margin-left: 24px
+    padding: 10px 16px
+    font-size: 12px
+    font-weight: 500
+    border-radius: 8px
+    outline: 1px solid $darkblue
+
+    &__cancel
+      width: 69px
+      margin: 0
+      background-color: inherit
+      outline: 1px solid $darkblue
+      color: $darkblue
+      // position: absolute
+      // left: 3px
+.w200
+  width: 200px
+.after-dark >.table-block__titles
+
+  background-color: #2C343F !important

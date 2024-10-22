@@ -1,0 +1,20 @@
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_2147">
+			<rect id="ethereum-eth-logo 2" rx="-0.500000" width="12.000000" height="21.000000" transform="translate(10.000000 5.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 433" cx="16.000000" cy="16.000000" r="16.000000" fill="#627EEA" fill-opacity="1.000000"/>
+	<rect id="ethereum-eth-logo 2" rx="-0.500000" width="12.000000" height="21.000000" transform="translate(10.000000 5.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_2147)">
+		<path id="Vector" d="M15.99 5L15.85 5.5L15.85 20.04L15.99 20.19L22.49 16.2L15.99 5Z" fill="#C1CCF6" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M15.99 5L9.5 16.2L15.99 20.19L15.99 13.13L15.99 5Z" fill="#DCE1F5" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M15.99 21.47L15.91 21.57L15.91 26.75L15.99 27L22.5 17.48L15.99 21.47Z" fill="#C1CCF6" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M15.99 27L15.99 21.47L9.5 17.48L15.99 27Z" fill="#DCE1F5" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16 20.19L22.49 16.2L16 13.13L16 20.19Z" fill="#8198EE" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M9.5 16.2L15.99 20.19L15.99 13.13L9.5 16.2Z" fill="#C1CCF6" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark">
+    <header class="header dashboard-header">
+      <div class="overlay"></div>
+      <div class="container-dashboard">
+        <div class="dashboard-wrapper color-wrap">
+          <div class="logo dashboard-logo">
+            <a href="#" class="logo-link"> </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link active">Trade</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Buy with Fiat</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Auctions</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">P2P Lending</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">RFQs</a>
+              </li>
+            </ul>
+            <div class="active-after"></div>
+          </nav>
+          <form action="#" class="form dashboard-form">
+            <input
+              type="text"
+              class="search dashboard-input darkbutton"
+              placeholder="Search by symbol or address"
+            />
+            <div class="dropdown">
+              <div class="button dropdowns dropbtn">All Chain</div>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-link">All Chain</a>
+                <a href="#" class="dropdown-link">All Chain</a>
+                <a href="#" class="dropdown-link">All Chain</a>
+                <a href="#" class="dropdown-link">All Chain</a>
+              </div>
+            </div>
+          </form>
+          <div class="dropdown2">
+            <button id="dropbtn" class="button dropdowns dropbtn2">
+              Ethereum
+            </button>
+            <div class="dropdown2-content">
+              <a href="#" class="dropdown-link dropdown2-link">USDT</a>
+              <a href="#" class="dropdown-link dropdown2-link">Multipool</a>
+              <a href="#" class="dropdown-link dropdown2-link">Bitcoin</a>
+            </div>
+          </div>
+          <button class="button dashboard-button">Connect</button>
+          <div class="dashboard-profile">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13401 13 5 14.7909 5 17C5 19.2091 8.13401 21 12 21Z"
+                fill="#8594AA"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="trading">
+      <div class="container-dashboard">
+        <div class="trading-wrapper">
+          <div class="trading-graph color-wrap">
+            <div class="graph-top">
+              <div class="graph-menu">
+                <div class="graph-images">
+                  <img
+                    src="img/ether-graph.svg"
+                    alt=""
+                    class="graph-img graph-img1"
+                  />
+                  <img
+                    src="img/usd-graph.svg"
+                    alt=""
+                    class="graph-img graph-img2"
+                  />
+                </div>
+                <button class="graph-dropdown">
+                  <div class="graph-image"></div>
+                  <span class="graph-dropdown__text">eth / USDt</span>
+                </button>
+              </div>
+              <div class="graph-info">
+                <div class="graph-price">
+                  <span class="graph__count"
+                    >2,225.5 <span class="grey">USDT</span></span
+                  >
+                  <span class="graph__rate">+3.62%</span>
+                </div>
+                <div class="graph-text">
+                  <div class="graph-txt">
+                    <span class="name"
+                      >O: <span class="num">2,241.38</span></span
+                    >
+                  </div>
+                  <!-- /.graph-txt -->
+                  <div class="graph-txt">
+                    <span class="name"
+                      >H: <span class="num">2,241.38</span></span
+                    >
+                  </div>
+                  <!-- /.graph-txt -->
+                  <div class="graph-txt">
+                    <span class="name"
+                      >L: <span class="num">2,241.38</span></span
+                    >
+                  </div>
+                  <!-- /.graph-txt -->
+                  <div class="graph-txt">
+                    <span class="name"
+                      >C: <span class="num">2,241.38</span></span
+                    >
+                  </div>
+                  <!-- /.graph-txt -->
+                  <div class="graph-txt graph-txt--l">
+                    <span class="name"
+                      >VOL: <span class="num">$2,267.56M</span></span
+                    >
+                  </div>
+                  <!-- /.graph-txt -->
+                </div>
+              </div>
+              <!-- /.graph-info -->
+            </div>
+            <div class="trading-tabs">
+              <div class="trading-tab darkbutton">
+                <span>15M</span>
+              </div>
+              <div class="trading-tab darkbutton">
+                <span>4H</span>
+              </div>
+              <div class="trading-tab active-tab darkbutton">
+                <span>24W</span>
+              </div>
+              <div class="trading-tab darkbutton">
+                <span>1W</span>
+              </div>
+            </div>
+            <div class="graph-image">
+              <img src="img/graph.jpeg" alt="" class="graph__img" />
+            </div>
+          </div>
+          <!-- /.trading-graph -->
+          <div class="orderbook">
+            <div class="orderbook-wrapper color-wrap">
+              <div class="orderbook-wrap">
+                <ul class="orderbook-list">
+                  <li class="orderbook-list__item">
+                    <a href="#" class="orderbook-list__link active"
+                      >Order Book</a
+                    >
+                  </li>
+                  <li class="orderbook-list__item">
+                    <a href="#" class="orderbook-list__link">Trade History</a>
+                  </li>
+                  <li class="orderbook-list__item">
+                    <a href="#" class="orderbook-list__link">Info</a>
+                  </li>
+                </ul>
+                <div class="active-list"></div>
+              </div>
+
+              <!-- /.orderbook-setting -->
+              <div class="tabcontent tabcontent-active">
+                <div class="tabcontent-wrapper">
+                  <div class="orderbook-setting">
+                    <div class="orderbook-dropdown darkbutton">
+                      <input
+                        class="text-box"
+                        type="text"
+                        placeholder="0.1"
+                        readonly
+                      />
+                      <div class="dropdown-menu darkbutton">
+                        <div onclick="show('0.1')" class="dropdown-menu__list">
+                          0.1
+                        </div>
+                        <div onclick="show('0.5')" class="dropdown-menu__list">
+                          0.5
+                        </div>
+                        <div onclick="show('1.0')" class="dropdown-menu__list">
+                          1.0
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.orderbook-dropdown -->
+                    <span class="orderbook__num">2,241.30</span>
+                    <div class="orderbook-setting-icon darkbutton">
+                      <svg
+                        class="orderbook-setting__icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.0455 3H12.9545C14.0089 3 14.8636 3.80589 14.8636 4.8C14.8636 5.93762 16.0808 6.66088 17.08 6.11698L17.1815 6.06174C18.0946 5.56468 19.2622 5.85966 19.7894 6.72058L20.7439 8.27943C21.2711 9.14036 20.9582 10.2412 20.0451 10.7383C19.0455 11.2824 19.0455 12.7176 20.0451 13.2617C20.9582 13.7588 21.2711 14.8596 20.7439 15.7206L19.7894 17.2794C19.2622 18.1403 18.0946 18.4353 17.1815 17.9383L17.08 17.883C16.0808 17.3391 14.8636 18.0624 14.8636 19.2C14.8636 20.1941 14.0089 21 12.9545 21H11.0455C9.99109 21 9.13635 20.1941 9.13635 19.2C9.13635 18.0624 7.91917 17.3391 6.92 17.883L6.81851 17.9383C5.90541 18.4353 4.73782 18.1404 4.21064 17.2794L3.25609 15.7206C2.72891 14.8597 3.04176 13.7588 3.95487 13.2617C4.95451 12.7176 4.95451 11.2824 3.95487 10.7383C3.04176 10.2412 2.72891 9.14034 3.25609 8.27942L4.21064 6.72057C4.73782 5.85964 5.90541 5.56467 6.81852 6.06172L6.92 6.11697C7.91917 6.66087 9.13635 5.93761 9.13635 4.8C9.13635 3.80589 9.99109 3 11.0455 3ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z"
+                          fill="#8594AA"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tabcontent-price-span">
+                    <span class="tabcontent-price__span span-right"
+                      >Bid Qty.</span
+                    >
+                    <span class="tabcontent-price__span span-right"
+                      >Bid Price</span
+                    >
+                    <span class="tabcontent-price__span span-left"
+                      >Ask Price</span
+                    >
+                    <span class="tabcontent-price__span span-left mr0"
+                      >Ask Qty.</span
+                    >
+                  </div>
+                  <div class="tabcontent-currency-span">
+                    <span class="tabcontent-currency__span span-right"
+                      >ETH</span
+                    >
+                    <span class="tabcontent-currency__span span-right"
+                      >USDT</span
+                    >
+                    <span class="tabcontent-currency__span span-left"
+                      >USDT</span
+                    >
+                    <span class="tabcontent-currency__span span-left mr0"
+                      >ETH</span
+                    >
+                  </div>
+                  <div class="tabcontent-num">
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--1">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >3.384</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2241.20</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.30</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >2241.20</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--2">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >2.643</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2241.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >9.234</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--3">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >6.842</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2241.00</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.50</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >8.456</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--4">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >9.216</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.90</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.60</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >12.453</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--5">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >1.314</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.80</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.70</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >9.232</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--6">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >3.147</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.70</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.80</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.763</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--7">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >7.543</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.60</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2241.90</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >8.434</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--8">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >9.987</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.50</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.00</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.444</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--9">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >1.234</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >4.985</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--10">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >6.010</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.30</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.20</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >22.134</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--11">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >2.001</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.20</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.30</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >10.000</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--12">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--12">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--12">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--12">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div class="tabcontent-num__wrap tabcontent-num__wrap--12">
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                    <div
+                      class="tabcontent-num__wrap tabcontent-num__wrap--12 mb0"
+                    >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-right"
+                        >8.767</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__green mr32 span-right"
+                        >2240.10</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__red span-left"
+                        >2243.40</span
+                      >
+                      <span
+                        class="tabcontent-num__span tabcontent-num__black span-left mr0"
+                        >3.637</span
+                      >
+                    </div>
+                    <!-- /.tabcontent-num-wrap -->
+                  </div>
+                </div>
+                <!-- /.tabcontent-wrapper -->
+              </div>
+              <div class="tabcontent tabcontent2">
+                <div class="tabcontent2-wrapper">
+                  <div class="tabcontent2-wrap">
+                    <div class="tabcontent2-trade-span mr-53">
+                      <span class="tabcontent2-trade__span">Price</span>
+                      <span class="tabcontent2-trade__span--border"
+                        >USDC.e</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-trade-span -->
+                    <div class="tabcontent2-trade-span mr-auto">
+                      <span class="tabcontent2-trade__span">Qty</span>
+                      <span class="tabcontent2-trade__span--border">ETH</span>
+                    </div>
+                    <!-- /.tabcontent2-trade-span -->
+                    <div class="tabcontent2-trade-span">
+                      <span class="tabcontent2-trade__span">Time</span>
+                    </div>
+                    <!-- /.tabcontent2-trade-span -->
+                  </div>
+                  <!-- /.tabcontent2-wrap -->
+                  <div class="tabcontent2-desc">
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__red"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                    <div class="tabcontent2-num">
+                      <span class="tabcontent2-num__span tabcontent-num__green"
+                        >2,369.90</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >0.0300</span
+                      >
+                      <span class="tabcontent2-num__span tabcontent-num__black"
+                        >20:41:59</span
+                      >
+                    </div>
+                    <!-- /.tabcontent2-num -->
+                  </div>
+                </div>
+                <!-- /.tabcontent2-wrapper -->
+              </div>
+              <div class="tabcontent tabcontent3">
+                <div class="tabcontent3-wrap">
+                  <div class="tabcontent3-title">
+                    <img
+                      src="img/ethereum.svg"
+                      alt=""
+                      class="tabcontent3-img"
+                    />
+                    <span class="tabcontent3__title">eth</span>
+                  </div>
+                  <p class="tabcontent3-text light">
+                    Ethereum is a decentralized platform that runs smart
+                    contracts: applications that run exactly as programmed
+                    without any possibility of downtime, censorship, fraud or
+                    third party interference
+                  </p>
+                  <div class="tabcontent3-info">
+                    <div class="tabcontent3-desc">
+                      <span class="tabcontent3-desc__span__name grey-span"
+                        >Last price</span
+                      >
+                      <span class="tabcontent3-desc__span__num">2,241.30</span>
+                    </div>
+                    <div class="tabcontent3-desc">
+                      <span class="tabcontent3-desc__span__name grey-span"
+                        >24h volume</span
+                      >
+                      <span class="tabcontent3-desc__span__num"
+                        >18.09M<span class="grey-span ml8">USDT</span></span
+                      >
+                    </div>
+                    <div class="tabcontent3-desc">
+                      <span class="tabcontent3-desc__span__name grey-span"
+                        >24h high</span
+                      >
+                      <span class="tabcontent3-desc__span__num">2,263.77</span>
+                    </div>
+                    <div class="tabcontent3-desc">
+                      <span class="tabcontent3-desc__span__name grey-span"
+                        >24h low</span
+                      >
+                      <span class="tabcontent3-desc__span__num">2,170.87</span>
+                    </div>
+                  </div>
+                  <!-- /.tabcontent3-info -->
+                  <div class="tabcontent3-links">
+                    <a href="#" class="tabcontent3-link darkbutton"
+                      >Official Website</a
+                    >
+                    <a href="#" class="tabcontent3-link darkbutton"
+                      >Whitepaper</a
+                    >
+                    <a href="#" class="tabcontent3-link darkbutton"
+                      >Block Explorer</a
+                    >
+                  </div>
+                  <!-- /.tabcontent3-links -->
+                  <div class="tabcontent3-network">
+                    <ul class="tabcontent3-list">
+                      <li class="tabcontent3-list__item">
+                        <a href="#" class="tabcontent3-list__link">
+                          <img
+                            src="img/x.svg"
+                            alt=""
+                            class="tabcontent3-list__image"
+                          />
+                        </a>
+                      </li>
+                      <li class="tabcontent3-list__item">
+                        <a href="#" class="tabcontent3-list__link">
+                          <img
+                            src="img/tg.svg"
+                            alt=""
+                            class="tabcontent3-list__image"
+                          />
+                        </a>
+                      </li>
+                      <li class="tabcontent3-list__item">
+                        <a href="#" class="tabcontent3-list__link">
+                          <img
+                            src="img/Dis.svg"
+                            alt=""
+                            class="tabcontent3-list__image"
+                          />
+                        </a>
+                      </li>
+                      <li class="tabcontent3-list__item">
+                        <a href="#" class="tabcontent3-list__link">
+                          <img
+                            src="img/Medium.svg"
+                            alt=""
+                            class="tabcontent3-list__image"
+                          />
+                        </a>
+                      </li>
+                      <li class="tabcontent3-list__item">
+                        <a href="#" class="tabcontent3-list__link">
+                          <img
+                            src="img/m-logo.svg"
+                            alt=""
+                            class="tabcontent3-list__image"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /.tabcontent3-wrap -->
+              </div>
+            </div>
+            <!-- /.orderbook-wrapper -->
+          </div>
+          <!-- /.orderbook -->
+          <div class="trading-wallet">
+            <div class="wallet-wrapper">
+              <div class="wallet-tabs color-wrap">
+                <div class="wallet-tab wallet-tab__market">Market</div>
+                <div class="wallet-tab wallet-tab__limit active-wallet-tab">
+                  Limit
+                </div>
+              </div>
+              <div class="wallet-tabcontent">
+                <div class="wallet-wrap wallet-sell darkwrap">
+                  <div class="wallet-price wallet-price-sell">
+                    <span class="wallet-price__name">You Sell</span>
+                    <span
+                      class="wallet-price__current wallet-price__current--sell"
+                      >Balance</span
+                    >
+                    <svg
+                      class="loader"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.625 2.29297C10.625 1.94779 10.3452 1.66797 10 1.66797C9.65482 1.66797 9.375 1.94779 9.375 2.29297V4.3763C9.375 4.72148 9.65482 5.0013 10 5.0013C10.3452 5.0013 10.625 4.72148 10.625 4.3763V2.29297ZM10.625 15.8359C10.625 15.4908 10.3452 15.2109 10 15.2109C9.65482 15.2109 9.375 15.4908 9.375 15.8359V17.7109C9.375 18.0561 9.65482 18.3359 10 18.3359C10.3452 18.3359 10.625 18.0561 10.625 17.7109V15.8359ZM15.8951 4.10991C16.1391 4.35399 16.1391 4.74972 15.8951 4.99379L14.4219 6.46693C14.1778 6.71101 13.7821 6.71101 13.538 6.46693C13.294 6.22286 13.294 5.82713 13.538 5.58305L15.0112 4.10991C15.2553 3.86583 15.651 3.86583 15.8951 4.10991ZM6.31694 14.568C6.56102 14.3239 6.56102 13.9282 6.31694 13.6841C6.07286 13.4401 5.67714 13.4401 5.43306 13.6841L4.10723 15.01C3.86316 15.254 3.86316 15.6498 4.10723 15.8938C4.35131 16.1379 4.74704 16.1379 4.99112 15.8938L6.31694 14.568ZM18.3359 10C18.3359 10.3452 18.0561 10.625 17.7109 10.625H15.6276C15.2824 10.625 15.0026 10.3452 15.0026 10C15.0026 9.65482 15.2824 9.375 15.6276 9.375H17.7109C18.0561 9.375 18.3359 9.65482 18.3359 10ZM4.16797 10.625C4.51315 10.625 4.79297 10.3452 4.79297 10C4.79297 9.65482 4.51315 9.375 4.16797 9.375H2.29297C1.94779 9.375 1.66797 9.65482 1.66797 10C1.66797 10.3452 1.94779 10.625 2.29297 10.625H4.16797ZM15.894 15.8951C15.6499 16.1391 15.2542 16.1391 15.0101 15.8951L13.537 14.4219C13.2929 14.1778 13.2929 13.7821 13.537 13.538C13.7811 13.294 14.1768 13.294 14.4209 13.538L15.894 15.0112C16.1381 15.2553 16.1381 15.651 15.894 15.8951ZM5.43589 6.31694C5.67997 6.56102 6.0757 6.56102 6.31978 6.31694C6.56385 6.07286 6.56385 5.67714 6.31978 5.43306L4.99395 4.10723C4.74987 3.86316 4.35415 3.86316 4.11007 4.10723C3.86599 4.35131 3.86599 4.74704 4.11007 4.99112L5.43589 6.31694Z"
+                        fill="#8594AA"
+                      />
+                    </svg>
+                  </div>
+                  <div class="wallet-calc">
+                    <form action="">
+                      <input
+                        class="wallet-price__span wallet-price__value"
+                        autocomplete="off"
+                        id="text3"
+                        type="text"
+                        placeholder="0.00"
+                      />
+                    </form>
+                    <div class="wallet-dropdown">
+                      <div class="wallet-dropdown__image">
+                        <img
+                          src="img/ether-graph.svg"
+                          alt=""
+                          class="wallet-dropdown__img"
+                        />
+                      </div>
+                      <div class="wallet-dropdown__info">
+                        <span class="wallet-dropdown__name">ETH</span>
+                        <span class="wallet-dropdown__span">Ethereum</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.wallet-calc -->
+
+                  <div class="wallet-rate-tabs">
+                    <div class="wallet-rate-tab darkbutton">
+                      <span>25%</span>
+                    </div>
+                    <div class="wallet-rate-tab active-rate-tab darkbutton">
+                      <span>50%</span>
+                    </div>
+                    <div class="wallet-rate-tab darkbutton">
+                      <span>75%</span>
+                    </div>
+                    <div class="wallet-rate-tab darkbutton mr0">
+                      <span>100%</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.wallet-wrap/sell -->
+                <div class="wallet-before"></div>
+                <div class="wallet-wrap wallet-receive darkwrap">
+                  <div class="wallet-price wallet-price--receive">
+                    <span class="wallet-price__name">You Receive</span>
+                    <span
+                      class="wallet-price__current wallet-price__current--sell"
+                      >Balance</span
+                    >
+                    <svg
+                      class="loader"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.625 2.29297C10.625 1.94779 10.3452 1.66797 10 1.66797C9.65482 1.66797 9.375 1.94779 9.375 2.29297V4.3763C9.375 4.72148 9.65482 5.0013 10 5.0013C10.3452 5.0013 10.625 4.72148 10.625 4.3763V2.29297ZM10.625 15.8359C10.625 15.4908 10.3452 15.2109 10 15.2109C9.65482 15.2109 9.375 15.4908 9.375 15.8359V17.7109C9.375 18.0561 9.65482 18.3359 10 18.3359C10.3452 18.3359 10.625 18.0561 10.625 17.7109V15.8359ZM15.8951 4.10991C16.1391 4.35399 16.1391 4.74972 15.8951 4.99379L14.4219 6.46693C14.1778 6.71101 13.7821 6.71101 13.538 6.46693C13.294 6.22286 13.294 5.82713 13.538 5.58305L15.0112 4.10991C15.2553 3.86583 15.651 3.86583 15.8951 4.10991ZM6.31694 14.568C6.56102 14.3239 6.56102 13.9282 6.31694 13.6841C6.07286 13.4401 5.67714 13.4401 5.43306 13.6841L4.10723 15.01C3.86316 15.254 3.86316 15.6498 4.10723 15.8938C4.35131 16.1379 4.74704 16.1379 4.99112 15.8938L6.31694 14.568ZM18.3359 10C18.3359 10.3452 18.0561 10.625 17.7109 10.625H15.6276C15.2824 10.625 15.0026 10.3452 15.0026 10C15.0026 9.65482 15.2824 9.375 15.6276 9.375H17.7109C18.0561 9.375 18.3359 9.65482 18.3359 10ZM4.16797 10.625C4.51315 10.625 4.79297 10.3452 4.79297 10C4.79297 9.65482 4.51315 9.375 4.16797 9.375H2.29297C1.94779 9.375 1.66797 9.65482 1.66797 10C1.66797 10.3452 1.94779 10.625 2.29297 10.625H4.16797ZM15.894 15.8951C15.6499 16.1391 15.2542 16.1391 15.0101 15.8951L13.537 14.4219C13.2929 14.1778 13.2929 13.7821 13.537 13.538C13.7811 13.294 14.1768 13.294 14.4209 13.538L15.894 15.0112C16.1381 15.2553 16.1381 15.651 15.894 15.8951ZM5.43589 6.31694C5.67997 6.56102 6.0757 6.56102 6.31978 6.31694C6.56385 6.07286 6.56385 5.67714 6.31978 5.43306L4.99395 4.10723C4.74987 3.86316 4.35415 3.86316 4.11007 4.10723C3.86599 4.35131 3.86599 4.74704 4.11007 4.99112L5.43589 6.31694Z"
+                        fill="#8594AA"
+                      />
+                    </svg>
+                  </div>
+                  <div class="wallet-calc wallet-calc-receive darkwrap">
+                    <form action="">
+                      <input
+                        class="wallet-price__span wallet-price__value"
+                        autocomplete="off"
+                        id="text4"
+                        type="text"
+                        placeholder="0.00"
+                        readonly
+                      />
+                    </form>
+                    <div class="wallet-dropdown">
+                      <div class="wallet-dropdown__image">
+                        <img
+                          src="img/usd-graph.svg"
+                          alt=""
+                          class="wallet-dropdown__img"
+                        />
+                      </div>
+                      <div
+                        class="wallet-dropdown__info wallet-dropdown__info--arrow"
+                      >
+                        <span class="wallet-dropdown__name">USDT</span>
+                        <span class="wallet-dropdown__span">Ethereum</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.wallet-calc -->
+                </div>
+                <!-- /.wallet-wrap/sell -->
+                <button class="wallet-button button">Connect Wallet</button>
+              </div>
+              <div class="wallet-tabcontent show">
+                <div class="wallet-wrap darkwrap">
+                  <div class="wallet-price">
+                    <span class="wallet-price__name">Limit Price</span>
+                    <span class="wallet-price__current"
+                      >Current Price: 1 ETH = 2268.61 USDT</span
+                    >
+                  </div>
+                  <form action="">
+                    <div class="wallet-calc pole">
+                      <input
+                        type="text"
+                        class="wallet-price__span pole-input inputText"
+                        value="2275.12"
+                        readonly
+                      />
+                      <span class="grey-span wallet-price__grey">USDT</span>
+                      <span class="minus">
+                        <button
+                          type="button"
+                          id="minus"
+                          class="wallet-operator wallet-operator__minus darkbutton"
+                        ></button>
+                      </span>
+                      <span class="plus">
+                        <button
+                          type="button"
+                          id="plus"
+                          class="wallet-operator wallet-operator__plus darkbutton"
+                        ></button>
+                      </span>
+                    </div>
+                    <!-- /.wallet-calc -->
+                  </form>
+                  <div class="wallet-info">
+                    <span class="wallet-info__span">Service Fee</span>
+                    <img
+                      src="img/information.svg"
+                      alt=""
+                      class="wallet-info__icon"
+                    />
+                    <span class="wallet-rate__span">0.2%</span>
+                  </div>
+                </div>
+                <!-- /.wallet-wrap -->
+                <div class="wallet-wrap wallet-sell darkwrap">
+                  <div class="wallet-price wallet-price-sell">
+                    <span class="wallet-price__name">You Sell</span>
+                    <span
+                      class="wallet-price__current wallet-price__current--sell"
+                      >Balance</span
+                    >
+                    <svg
+                      class="loader"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.625 2.29297C10.625 1.94779 10.3452 1.66797 10 1.66797C9.65482 1.66797 9.375 1.94779 9.375 2.29297V4.3763C9.375 4.72148 9.65482 5.0013 10 5.0013C10.3452 5.0013 10.625 4.72148 10.625 4.3763V2.29297ZM10.625 15.8359C10.625 15.4908 10.3452 15.2109 10 15.2109C9.65482 15.2109 9.375 15.4908 9.375 15.8359V17.7109C9.375 18.0561 9.65482 18.3359 10 18.3359C10.3452 18.3359 10.625 18.0561 10.625 17.7109V15.8359ZM15.8951 4.10991C16.1391 4.35399 16.1391 4.74972 15.8951 4.99379L14.4219 6.46693C14.1778 6.71101 13.7821 6.71101 13.538 6.46693C13.294 6.22286 13.294 5.82713 13.538 5.58305L15.0112 4.10991C15.2553 3.86583 15.651 3.86583 15.8951 4.10991ZM6.31694 14.568C6.56102 14.3239 6.56102 13.9282 6.31694 13.6841C6.07286 13.4401 5.67714 13.4401 5.43306 13.6841L4.10723 15.01C3.86316 15.254 3.86316 15.6498 4.10723 15.8938C4.35131 16.1379 4.74704 16.1379 4.99112 15.8938L6.31694 14.568ZM18.3359 10C18.3359 10.3452 18.0561 10.625 17.7109 10.625H15.6276C15.2824 10.625 15.0026 10.3452 15.0026 10C15.0026 9.65482 15.2824 9.375 15.6276 9.375H17.7109C18.0561 9.375 18.3359 9.65482 18.3359 10ZM4.16797 10.625C4.51315 10.625 4.79297 10.3452 4.79297 10C4.79297 9.65482 4.51315 9.375 4.16797 9.375H2.29297C1.94779 9.375 1.66797 9.65482 1.66797 10C1.66797 10.3452 1.94779 10.625 2.29297 10.625H4.16797ZM15.894 15.8951C15.6499 16.1391 15.2542 16.1391 15.0101 15.8951L13.537 14.4219C13.2929 14.1778 13.2929 13.7821 13.537 13.538C13.7811 13.294 14.1768 13.294 14.4209 13.538L15.894 15.0112C16.1381 15.2553 16.1381 15.651 15.894 15.8951ZM5.43589 6.31694C5.67997 6.56102 6.0757 6.56102 6.31978 6.31694C6.56385 6.07286 6.56385 5.67714 6.31978 5.43306L4.99395 4.10723C4.74987 3.86316 4.35415 3.86316 4.11007 4.10723C3.86599 4.35131 3.86599 4.74704 4.11007 4.99112L5.43589 6.31694Z"
+                        fill="#8594AA"
+                      />
+                    </svg>
+                  </div>
+                  <div class="wallet-calc">
+                    <form action="">
+                      <input
+                        class="wallet-price__span inputValue"
+                        autocomplete="off"
+                        placeholder="0.00"
+                        type="text"
+                        id="text1"
+                      />
+                    </form>
+                    <div class="wallet-dropdown">
+                      <div class="wallet-dropdown__image">
+                        <img
+                          src="img/ether-graph.svg"
+                          alt=""
+                          class="wallet-dropdown__img"
+                        />
+                      </div>
+                      <div class="wallet-dropdown__info">
+                        <span class="wallet-dropdown__name">ETH</span>
+                        <span class="wallet-dropdown__span">Ethereum</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.wallet-calc -->
+
+                  <div class="wallet-rate-tabs">
+                    <div class="wallet-rate-tab darkbutton">
+                      <span>25%</span>
+                    </div>
+                    <div class="wallet-rate-tab active-rate-tab darkbutton">
+                      <span>50%</span>
+                    </div>
+                    <div class="wallet-rate-tab darkbutton">
+                      <span>75%</span>
+                    </div>
+                    <div class="wallet-rate-tab mr0 darkbutton">
+                      <span>100%</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.wallet-wrap/sell -->
+                <div class="wallet-before"></div>
+                <div class="wallet-wrap wallet-receive darkwrap">
+                  <div class="wallet-price wallet-price--receive">
+                    <span class="wallet-price__name">You Receive</span>
+                    <span
+                      class="wallet-price__current wallet-price__current--sell"
+                      >Balance</span
+                    >
+                    <svg
+                      class="loader"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.625 2.29297C10.625 1.94779 10.3452 1.66797 10 1.66797C9.65482 1.66797 9.375 1.94779 9.375 2.29297V4.3763C9.375 4.72148 9.65482 5.0013 10 5.0013C10.3452 5.0013 10.625 4.72148 10.625 4.3763V2.29297ZM10.625 15.8359C10.625 15.4908 10.3452 15.2109 10 15.2109C9.65482 15.2109 9.375 15.4908 9.375 15.8359V17.7109C9.375 18.0561 9.65482 18.3359 10 18.3359C10.3452 18.3359 10.625 18.0561 10.625 17.7109V15.8359ZM15.8951 4.10991C16.1391 4.35399 16.1391 4.74972 15.8951 4.99379L14.4219 6.46693C14.1778 6.71101 13.7821 6.71101 13.538 6.46693C13.294 6.22286 13.294 5.82713 13.538 5.58305L15.0112 4.10991C15.2553 3.86583 15.651 3.86583 15.8951 4.10991ZM6.31694 14.568C6.56102 14.3239 6.56102 13.9282 6.31694 13.6841C6.07286 13.4401 5.67714 13.4401 5.43306 13.6841L4.10723 15.01C3.86316 15.254 3.86316 15.6498 4.10723 15.8938C4.35131 16.1379 4.74704 16.1379 4.99112 15.8938L6.31694 14.568ZM18.3359 10C18.3359 10.3452 18.0561 10.625 17.7109 10.625H15.6276C15.2824 10.625 15.0026 10.3452 15.0026 10C15.0026 9.65482 15.2824 9.375 15.6276 9.375H17.7109C18.0561 9.375 18.3359 9.65482 18.3359 10ZM4.16797 10.625C4.51315 10.625 4.79297 10.3452 4.79297 10C4.79297 9.65482 4.51315 9.375 4.16797 9.375H2.29297C1.94779 9.375 1.66797 9.65482 1.66797 10C1.66797 10.3452 1.94779 10.625 2.29297 10.625H4.16797ZM15.894 15.8951C15.6499 16.1391 15.2542 16.1391 15.0101 15.8951L13.537 14.4219C13.2929 14.1778 13.2929 13.7821 13.537 13.538C13.7811 13.294 14.1768 13.294 14.4209 13.538L15.894 15.0112C16.1381 15.2553 16.1381 15.651 15.894 15.8951ZM5.43589 6.31694C5.67997 6.56102 6.0757 6.56102 6.31978 6.31694C6.56385 6.07286 6.56385 5.67714 6.31978 5.43306L4.99395 4.10723C4.74987 3.86316 4.35415 3.86316 4.11007 4.10723C3.86599 4.35131 3.86599 4.74704 4.11007 4.99112L5.43589 6.31694Z"
+                        fill="#8594AA"
+                      />
+                    </svg>
+                  </div>
+                  <div class="wallet-calc wallet-calc-receive">
+                    <form action="">
+                      <input
+                        class="wallet-price__span wallet-price__value"
+                        autocomplete="off"
+                        id="text2"
+                        type="text"
+                        placeholder="0.00"
+                        readonly
+                      />
+                    </form>
+                    <div class="wallet-dropdown">
+                      <div class="wallet-dropdown__image">
+                        <img
+                          src="img/usd-graph.svg"
+                          alt=""
+                          class="wallet-dropdown__img"
+                        />
+                      </div>
+                      <div
+                        class="wallet-dropdown__info wallet-dropdown__info--arrow"
+                      >
+                        <span class="wallet-dropdown__name">USDT</span>
+                        <span class="wallet-dropdown__span">Ethereum</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.wallet-calc -->
+                </div>
+                <!-- /.wallet-wrap/sell -->
+                <button class="wallet-button button">Connect Wallet</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.trading-wallet -->
+        </div>
+        <!-- /.trading-wrapper -->
+      </div>
+    </section>
+    <section class="table">
+      <div class="container-dashboard table-after">
+        <div class="table-wrapper color-wrap">
+          <div class="table-toptab">
+            <ul class="table-toptab-list">
+              <li class="table-list__item table-list__item__num">Orders</li>
+              <li class="table-list__item">Assets</li>
+            </ul>
+          </div>
+          <!-- /.table-toptab -->
+          <div class="table-bottomtab">
+            <div class="table-bottomtab__tabs darkbutton">
+              <div class="table-bottomtab__tab active-table">Open Orders</div>
+              <div class="table-bottomtab__tab">History</div>
+            </div>
+            <div class="table-bottomtab-icon darkbutton">
+              <svg
+                class="table-bottomtab__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.5 4.79167H7.7946C8.06665 5.75354 8.95102 6.45833 10 6.45833C11.049 6.45833 11.9333 5.75354 12.2054 4.79167H17.5C17.8452 4.79167 18.125 4.51184 18.125 4.16667C18.125 3.82149 17.8452 3.54167 17.5 3.54167H12.2054C11.9333 2.57979 11.049 1.875 10 1.875C8.95102 1.875 8.06665 2.57979 7.7946 3.54167H2.5C2.15482 3.54167 1.875 3.82149 1.875 4.16667C1.875 4.51184 2.15482 4.79167 2.5 4.79167ZM14.1667 7.70898C12.901 7.70898 11.875 8.735 11.875 10.0007C11.875 11.2663 12.901 12.2923 14.1667 12.2923C15.2156 12.2923 16.1 11.5875 16.3721 10.6257H17.5C17.8452 10.6257 18.125 10.3458 18.125 10.0007C18.125 9.65547 17.8452 9.37565 17.5 9.37565H16.3721C16.1 8.41377 15.2156 7.70898 14.1667 7.70898ZM1.875 10.0007C1.875 9.65547 2.15482 9.37565 2.5 9.37565H10C10.3452 9.37565 10.625 9.65547 10.625 10.0007C10.625 10.3458 10.3452 10.6257 10 10.6257H2.5C2.15482 10.6257 1.875 10.3458 1.875 10.0007ZM3.62793 16.4577H2.5C2.15482 16.4577 1.875 16.1779 1.875 15.8327C1.875 15.4875 2.15482 15.2077 2.5 15.2077H3.62793C3.89998 14.2458 4.78435 13.541 5.83333 13.541C7.09899 13.541 8.125 14.567 8.125 15.8327C8.125 17.0983 7.09899 18.1243 5.83333 18.1243C4.78435 18.1243 3.89998 17.4196 3.62793 16.4577ZM9.375 15.8327C9.375 15.4875 9.65482 15.2077 10 15.2077H17.5C17.8452 15.2077 18.125 15.4875 18.125 15.8327C18.125 16.1779 17.8452 16.4577 17.5 16.4577H10C9.65482 16.4577 9.375 16.1779 9.375 15.8327Z"
+                  fill="#8594AA"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- /.table-toptab -->
+          <table class="table-block">
+            <thead class="table-block__titles">
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="checkbox-input"
+                    id="checkbox"
+                    autocomplete="off"
+                  />
+                  <label for="checkbox">
+                    <span class="checkbox"></span>
+                  </label>
+                </td>
+                <th class="table-block__title">Order ID</th>
+                <th class="table-block__title">Time Placed</th>
+                <th class="table-block__title">Pair</th>
+                <th class="table-block__title">Order Type</th>
+                <th class="table-block__title">Side</th>
+                <th class="table-block__title">Price</th>
+                <th class="table-block__title">Fills</th>
+                <th class="table-block__title">Filled</th>
+                <th class="table-block__title">Amount</th>
+                <th class="table-block__title">Claimed</th>
+                <th class="table-block__title">Claimable</th>
+                <th class="table-block__title">Status</th>
+              </tr>
+            </thead>
+            <tr class="table-block__content">
+              <td>
+                <input
+                  type="checkbox"
+                  class="checkbox-input-2"
+                  id="checkbox2"
+                  name="all"
+                  autocomplete="off"
+                />
+                <label for="checkbox2">
+                  <span class="checkbox checkbox-2"></span>
+                </label>
+              </td>
+              <td class="table-block__text">9021340987123</td>
+              <td class="table-block__text">1/29/24 12:59.27</td>
+              <td class="table-block__text">ETH/USDT</td>
+              <td class="table-block__text">Limit</td>
+              <td class="table-block__text">Sell</td>
+              <td class="table-block__text">2302.16</td>
+              <td class="table-block__text">1</td>
+              <td class="table-block__text">1.252</td>
+              <td class="table-block__text">1.5</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text table-block__text-status">
+                Partially Filled
+              </td>
+              <td class="table-block__button table-block__text">
+                <a href="#" class="button-table">Partial Claim</a>
+              </td>
+              <td class="table-block__button--cancel table-block__text">
+                <a href="#" class="button-table button-table__cancel">Cancel</a>
+              </td>
+            </tr>
+            <tr class="table-block__content">
+              <td>
+                <input
+                  type="checkbox"
+                  class="checkbox-input-3"
+                  id="checkbox3"
+                  name="all"
+                  autocomplete="off"
+                />
+                <label for="checkbox3">
+                  <span class="checkbox checkbox-3"></span>
+                </label>
+              </td>
+              <td class="table-block__text">9021340987124</td>
+              <td class="table-block__text">1/29/24 12:59.27</td>
+              <td class="table-block__text">ETH/USDT</td>
+              <td class="table-block__text">Limit</td>
+              <td class="table-block__text">Sell</td>
+              <td class="table-block__text">2302.16</td>
+              <td class="table-block__text">1</td>
+              <td class="table-block__text">1.252</td>
+              <td class="table-block__text">1.5</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text">0</td>
+              <td
+                class="table-block__text table-block__text-status table-block__text-status--2"
+              >
+                Open
+              </td>
+              <td class="table-block__button table-block__text">
+                <a href="#" class="button-table">Cancel</a>
+              </td>
+            </tr>
+            <tr class="table-block__content">
+              <td>
+                <input
+                  type="checkbox"
+                  class="checkbox-input-4"
+                  id="checkbox4"
+                  name="all"
+                  autocomplete="off"
+                />
+                <label for="checkbox4">
+                  <span class="checkbox checkbox-4"></span>
+                </label>
+              </td>
+              <td class="table-block__text">9021340987125</td>
+              <td class="table-block__text">1/29/24 12:59.27</td>
+              <td class="table-block__text">ETH/USDT</td>
+              <td class="table-block__text">Limit</td>
+              <td class="table-block__text">Sell</td>
+              <td class="table-block__text">2302.16</td>
+              <td class="table-block__text">1</td>
+              <td class="table-block__text">1.252</td>
+              <td class="table-block__text">1.5</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text">0</td>
+              <td
+                class="table-block__text table-block__text-status table-block__text-status--3"
+              >
+                CANCELED
+              </td>
+              <td class="table-block__button table-block__text w200">
+                <a href="#" class="button-table">View Transaction</a>
+              </td>
+            </tr>
+            <tr class="table-block__content">
+              <td>
+                <input
+                  type="checkbox"
+                  class="checkbox-input-5"
+                  id="checkbox5"
+                  name="all"
+                  autocomplete="off"
+                />
+                <label for="checkbox5">
+                  <span class="checkbox checkbox-5"></span>
+                </label>
+              </td>
+              <td class="table-block__text">9021340987126</td>
+              <td class="table-block__text">1/29/24 12:59.27</td>
+              <td class="table-block__text">ETH/USDT</td>
+              <td class="table-block__text">Limit</td>
+              <td class="table-block__text">Sell</td>
+              <td class="table-block__text">2302.16</td>
+              <td class="table-block__text">1</td>
+              <td class="table-block__text">1.252</td>
+              <td class="table-block__text">1.5</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text">0</td>
+              <td
+                class="table-block__text table-block__text-status table-block__text-status--4"
+              >
+                Filled
+              </td>
+              <td class="table-block__button table-block__text">
+                <a href="#" class="button-table">Claim</a>
+              </td>
+            </tr>
+            <tr class="table-block__content table-block__content--end">
+              <td>
+                <input
+                  type="checkbox"
+                  class="checkbox-input-6"
+                  id="checkbox6"
+                  name="all"
+                  autocomplete="off"
+                />
+                <label for="checkbox6">
+                  <span class="checkbox checkbox-6"></span>
+                </label>
+              </td>
+              <td class="table-block__text">9021340987127</td>
+              <td class="table-block__text">1/29/24 12:59.27</td>
+              <td class="table-block__text">ETH/USDT</td>
+              <td class="table-block__text">Limit</td>
+              <td class="table-block__text">Sell</td>
+              <td class="table-block__text">2302.16</td>
+              <td class="table-block__text">1</td>
+              <td class="table-block__text">1.252</td>
+              <td class="table-block__text">1.5</td>
+              <td class="table-block__text">0</td>
+              <td class="table-block__text">0</td>
+              <td
+                class="table-block__text table-block__text-status table-block__text-status--5"
+              >
+                Claimed
+              </td>
+              <td class="table-block__button table-block__text w200">
+                <a href="#" class="button-table">View Transaction</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- /.tabel-wrapper -->
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-dashboard">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <input
+                  type="checkbox"
+                  id="darkmode-toggle"
+                  class="footer-input"
+                  autocomplete="off"
+                />
+                <label for="darkmode-toggle" class="footer-checkbox-switch">
+                  <svg
+                    class="footer-svg sun"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.00003 1.5C9.31069 1.5 9.56253 1.75184 9.56253 2.0625V2.8125C9.56253 3.12316 9.31069 3.375 9.00003 3.375C8.68937 3.375 8.43753 3.12316 8.43753 2.8125V2.0625C8.43753 1.75184 8.68937 1.5 9.00003 1.5ZM13.5 9C13.5 11.4853 11.4853 13.5 9.00003 13.5C6.51475 13.5 4.50003 11.4853 4.50003 9C4.50003 6.51472 6.51475 4.5 9.00003 4.5C11.4853 4.5 13.5 6.51472 13.5 9ZM9.56253 15.1875C9.56253 14.8768 9.31069 14.625 9.00003 14.625C8.68937 14.625 8.43753 14.8768 8.43753 15.1875V15.9375C8.43753 16.2482 8.68937 16.5 9.00003 16.5C9.31069 16.5 9.56253 16.2482 9.56253 15.9375V15.1875ZM2.50492 5.25001C2.66025 4.98097 3.00427 4.88879 3.27331 5.04412L3.92282 5.41912C4.19186 5.57445 4.28404 5.91847 4.12871 6.18751C3.97338 6.45655 3.62936 6.54873 3.36032 6.3934L2.71081 6.0184C2.44177 5.86307 2.34959 5.51905 2.50492 5.25001ZM14.6398 11.6066C14.3707 11.4513 14.0267 11.5435 13.8714 11.8125C13.716 12.0816 13.8082 12.4256 14.0773 12.5809L14.7268 12.9559C14.9958 13.1112 15.3398 13.0191 15.4952 12.75C15.6505 12.481 15.5583 12.137 15.2893 11.9816L14.6398 11.6066ZM15.4951 5.24999C15.6505 5.51903 15.5583 5.86305 15.2893 6.01838L14.6397 6.39338C14.3707 6.54871 14.0267 6.45653 13.8714 6.18749C13.716 5.91845 13.8082 5.57443 14.0772 5.4191L14.7268 5.0441C14.9958 4.88877 15.3398 4.98095 15.4951 5.24999ZM3.92281 12.5809C4.19185 12.4255 4.28403 12.0815 4.1287 11.8125C3.97337 11.5434 3.62935 11.4513 3.36031 11.6066L2.71079 11.9816C2.44175 12.1369 2.34957 12.4809 2.5049 12.75C2.66023 13.019 3.00425 13.1112 3.27329 12.9559L3.92281 12.5809Z"
+                      fill="#DCE1F5"
+                    />
+                  </svg>
+                  <svg
+                    class="footer-svg moon"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.25383 11.1518C8.06336 11.1518 11.1516 8.0636 11.1516 4.25407C11.1516 3.80141 11.108 3.35894 11.0248 2.93061C10.9676 2.63651 11.2393 2.37201 11.5157 2.48778C14.0029 3.52977 15.7501 5.98713 15.7501 8.85258C15.7501 12.6621 12.6619 15.7503 8.85234 15.7503C5.98689 15.7503 3.52953 14.0031 2.48754 11.5159C2.37177 11.2396 2.63626 10.9678 2.93037 11.025C3.35869 11.1082 3.80117 11.1518 4.25383 11.1518Z"
+                      fill="#8594AA"
+                    />
+                  </svg>
+                </label>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.5 9.16699C8.88071 9.16699 10 8.0477 10 6.66699C10 5.28628 8.88071 4.16699 7.5 4.16699C6.3351 4.16699 5.35629 4.96373 5.07876 6.04199H2.5C2.15482 6.04199 1.875 6.32181 1.875 6.66699C1.875 7.01217 2.15482 7.29199 2.5 7.29199H5.07876C5.35629 8.37026 6.3351 9.16699 7.5 9.16699ZM11.875 6.66699C11.875 6.32181 12.1548 6.04199 12.5 6.04199H17.5C17.8452 6.04199 18.125 6.32181 18.125 6.66699C18.125 7.01217 17.8452 7.29199 17.5 7.29199H12.5C12.1548 7.29199 11.875 7.01217 11.875 6.66699ZM14.9212 13.9587C14.6437 15.0369 13.6649 15.8337 12.5 15.8337C11.1193 15.8337 10 14.7144 10 13.3337C10 11.9529 11.1193 10.8337 12.5 10.8337C13.6649 10.8337 14.6437 11.6304 14.9212 12.7087H17.5C17.8452 12.7087 18.125 12.9885 18.125 13.3337C18.125 13.6788 17.8452 13.9587 17.5 13.9587H14.9212ZM1.875 13.3337C1.875 12.9885 2.15482 12.7087 2.5 12.7087H7.5C7.84518 12.7087 8.125 12.9885 8.125 13.3337C8.125 13.6788 7.84518 13.9587 7.5 13.9587H2.5C2.15482 13.9587 1.875 13.6788 1.875 13.3337Z"
+                      fill="#8594AA"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.20019 4.2191C7.90067 4.97401 7.6569 5.89099 7.49217 6.92045C8.28916 6.84745 9.13122 6.80859 10.0001 6.80859C10.869 6.80859 11.711 6.84745 12.508 6.92045C12.3433 5.89099 12.0995 4.97401 11.8 4.2191C11.5121 3.49351 11.1852 2.94916 10.8545 2.59665C10.5251 2.24549 10.2361 2.12754 10.0001 2.12754C9.76405 2.12754 9.47512 2.24549 9.14571 2.59665C8.81504 2.94916 8.48808 3.49351 8.20019 4.2191ZM7.02445 3.74496C6.65073 4.6869 6.36397 5.82157 6.18821 7.07597C5.32304 7.2046 4.5335 7.37624 3.84872 7.58335C3.05194 7.82434 2.36102 8.12397 1.85516 8.4857C1.79125 8.5314 1.72817 8.5797 1.66679 8.63062C2.22516 5.15104 4.87603 2.37832 8.27583 1.66699C8.25897 1.68429 8.24224 1.70178 8.22566 1.71946C7.74834 2.22831 7.34766 2.93036 7.02445 3.74496ZM11.7244 1.66699C11.7412 1.68429 11.758 1.70178 11.7745 1.71946C12.2519 2.22831 12.6525 2.93036 12.9757 3.74496C13.3495 4.6869 13.6362 5.82157 13.812 7.07597C14.6772 7.2046 15.4667 7.37624 16.1515 7.58335C16.9483 7.82434 17.6392 8.12397 18.145 8.4857C18.209 8.5314 18.272 8.5797 18.3334 8.63062C17.775 5.15104 15.1242 2.37832 11.7244 1.66699ZM18.3335 11.3698C18.2721 11.4207 18.209 11.469 18.145 11.5147C17.6392 11.8765 16.9483 12.1761 16.1515 12.4171C15.4667 12.6242 14.6772 12.7958 13.812 12.9245C13.6362 14.1788 13.3495 15.3135 12.9757 16.2555C12.6525 17.0701 12.2519 17.7721 11.7745 18.281C11.7579 18.2987 11.7411 18.3163 11.7241 18.3337C15.1241 17.6224 17.7752 14.8495 18.3335 11.3698ZM8.27608 18.3337C8.25913 18.3163 8.24232 18.2987 8.22566 18.281C7.74834 17.7721 7.34766 17.0701 7.02445 16.2555C6.65073 15.3135 6.36397 14.1788 6.18821 12.9245C5.32304 12.7958 4.5335 12.6242 3.84872 12.4171C3.05194 12.1761 2.36102 11.8765 1.85516 11.5147C1.79123 11.469 1.72814 11.4207 1.66675 11.3698C2.22505 14.8495 4.87608 17.6224 8.27608 18.3337ZM4.21259 11.1943C4.74967 11.3567 5.3676 11.4975 6.04869 11.6105C6.01013 11.087 5.99012 10.5488 5.99012 10.0002C5.99012 9.45166 6.01013 8.91341 6.04869 8.38992C5.3676 8.50292 4.74967 8.64372 4.2126 8.80616C3.48166 9.02723 2.93628 9.27779 2.58776 9.52701C2.22279 9.78798 2.19119 9.95714 2.19119 10.0002C2.19119 10.0433 2.22279 10.2124 2.58776 10.4734C2.93628 10.7226 3.48166 10.9732 4.21259 11.1943ZM7.25643 10.0002C7.25643 10.614 7.28297 11.2102 7.3329 11.7819C8.16532 11.8679 9.06246 11.9152 10.0001 11.9152C10.9377 11.9152 11.8349 11.8679 12.6673 11.7819C12.7172 11.2102 12.7438 10.614 12.7438 10.0002C12.7438 9.38639 12.7172 8.79026 12.6673 8.21855C11.8349 8.13249 10.9377 8.08524 10.0001 8.08524C9.06246 8.08524 8.16532 8.13249 7.3329 8.21855C7.28297 8.79025 7.25643 9.38639 7.25643 10.0002ZM8.20019 15.7813C7.90067 15.0264 7.6569 14.1094 7.49217 13.08C8.28916 13.153 9.13122 13.1918 10.0001 13.1918C10.869 13.1918 11.711 13.153 12.508 13.08C12.3433 14.1094 12.0995 15.0264 11.8 15.7813C11.5121 16.5069 11.1852 17.0513 10.8545 17.4038C10.5251 17.7549 10.2361 17.8729 10.0001 17.8729C9.76405 17.8729 9.47512 17.7549 9.14571 17.4038C8.81504 17.0513 8.48808 16.5069 8.20019 15.7813ZM15.7876 11.1943C15.2505 11.3567 14.6326 11.4975 13.9515 11.6105C13.9901 11.087 14.0101 10.5488 14.0101 10.0002C14.0101 9.45166 13.9901 8.91341 13.9515 8.38993C14.6326 8.50292 15.2505 8.64372 15.7876 8.80616C16.5185 9.02723 17.0639 9.27779 17.4124 9.52701C17.7774 9.78799 17.809 9.95714 17.809 10.0002C17.809 10.0433 17.7774 10.2124 17.4124 10.4734C17.0639 10.7226 16.5185 10.9732 15.7876 11.1943Z"
+                      fill="#8594AA"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <select id="theme">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

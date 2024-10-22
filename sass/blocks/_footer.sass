@@ -1,0 +1,79 @@
+.footer
+  padding: 24px 0 24px 0
+  &-list
+    display: flex
+    align-items: center
+    &__item
+      display: flex
+      margin-right: 8px
+    &__link
+      background-color: #DCE1F5
+      border-radius: 8px
+      padding: 6px
+      display: flex
+  &-checkbox
+    display: inline-block
+    height: 32px
+    line-height: 32px
+    margin-right: 8px
+    position: relative
+    vertical-align: middle
+    font-size: 14px
+    user-select: none
+    &-switch
+      width: 60px
+      height: 32px
+      position: relative
+      display: block
+      background: #DCE1F5
+      border-radius: 8px
+      cursor: pointer
+      transition: 0.3s
+      &:after
+        content: ""
+        width: 24px
+        height: 24px
+        position: absolute
+        top: 4px
+        left: 4px
+        background: $darkblue
+        border-radius: 6px
+        transition: 0.3s
+  &-svg
+    position: absolute
+    width: 18px
+    top: 7px
+    z-index: 100
+    &.sun
+      left: 7px
+      fill: #DCE1F5
+      stroke: #DCE1F5
+      transition: 0.3s
+
+    &.moon
+      left: 32px
+      stroke: #8594AA
+      transition: 0.3s
+  &-input
+    width: 0
+    height: 0
+    visibility: hidden
+    &:checked + label
+      background-color: #2C323C
+
+      &:after
+        left: 54px
+        transform: translateX(-100%)
+        background-color: #4FDFFF
+      .footer-svg
+        &.sun path
+          stroke: #8594AA
+          fill: #8594AA
+
+        &.moon path
+          stroke: $darkblue
+          fill: $darkblue
+
+
+      // &:active:after
+      //   width: 60px

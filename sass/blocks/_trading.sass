@@ -1,0 +1,1002 @@
+.trading
+  &-wrapper
+    display: flex
+    align-items: start
+    justify-content: space-between
+  &-graph
+    // background-color: #DCE1F5
+    padding: 16px
+    border-radius: 16px
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      top: 108px
+      right: 0
+      left: 0
+      background-color: var(--after)
+    &::after
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      top: 169px
+      right: 0
+      left: 0
+      background-color: var(--after)
+  .graph
+
+    &-top
+      display: flex
+      flex-direction: column
+    &-menu
+      display: flex
+      align-items: center
+      margin-bottom: 12px
+    &-dropdown
+      position: relative
+      padding-right: 35px
+      border: none
+      background-color: inherit
+      &::after
+        position: absolute
+        content: ''
+        background-image: url(../img/arrow-graph.svg)
+        background-repeat: no-repeat
+        background-position: right
+        width: 13px
+        height: 8px
+        top: 50%
+        transform: translateY(-50%)
+        right: 16px
+        transition: .3s
+      &__text
+        font-size: 20px
+        font-weight: 500
+        line-height: 25px
+        text-transform: uppercase
+    &-images
+      position: relative
+      width: 58px
+      margin-right: 8px
+      height: 32px
+    &-img
+      width: 32px !important
+      position: absolute
+      top: 0
+    &-img1
+      z-index: 4
+    &-img2
+      left: 26px
+      z-index: 1
+    &-info
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: relative
+
+    &-price
+      display: flex
+      align-items: center
+    &__count
+      font-size: 20px
+      font-weight: 500
+      line-height: 100%
+
+    &__rate
+      color: #2BB48A
+      border-radius: 6px
+      background: rgba(43, 180, 138, 0.2)
+      padding: 6px 8px
+
+    &-text
+      display: flex
+      align-items: center
+    &-txt
+      margin-right: 16px
+
+      &--l
+        margin-right: 0
+    &-image
+      width: 100%
+      border-radius: 16px
+      overflow: hidden
+    &__img
+      width: 100%
+      object-fit: cover
+  &-tabs
+    display: flex
+    align-items: center
+    margin-top: 32px
+    margin-bottom: 32px
+  &-tab
+    cursor: pointer
+    padding: 10px
+    font-size: 12px
+    font-weight: 400
+    line-height: 100%
+    background-color: var(--button-color-light)
+    width: 76px
+    outline: 1px solid $darkblue
+    border-radius: 8px
+    text-align: center
+    margin-right: 8px
+.grey
+  color: #8594AA
+  margin-left: 8px
+  margin-right: 12px
+.name
+  font-size: 14px
+  font-weight: 400
+  color: $darkblue
+.num
+  color: #2BB48A
+.active-tab
+  color: #DCE1F5
+  background-color: $darkblue
+
+  // ORDERBOOk
+.orderbook
+  border-radius: 16px
+  position: relative
+
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background-color: var(--after)
+    top: 45px
+    left: 0
+    right: 0
+  &-wrapper
+    padding: 16px 16px 21px 16px
+    width: 358px
+    border-radius: 16px
+
+  &-wrap
+    position: relative
+  &-setting
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 16px
+
+    &-icon
+      cursor: pointer
+      width: 32px
+      height: 32px
+      background-color: var(--button-color-light)
+      padding: 4px
+      border-radius: 8px
+    &__icon
+      fill: #8594AA
+      z-index: 10
+      transition: .3s
+
+      &:hover path
+        opacity: .8
+        transition: .3s
+
+        fill: $darkblue
+
+  &-list
+    margin-bottom: 32px
+    position: relative
+
+    &__item
+      margin-right: 16px
+      &:last-child
+        margin-right: 0
+    &__link
+      transition: .3s
+      position: relative
+      color: var(--link-color)
+
+      &:hover
+        color: var(--text-light)
+
+  &__num
+    font-size: 16px
+    font-weight: 500
+    display: inline-block
+    margin-right: auto
+  &-dropdown
+    border: 1px solid #CFD4E9
+    border-radius: 8px
+    background-color: inherit
+    z-index: 2
+    position: relative
+    min-width: 63px
+    height: 32px
+    margin-right: 24px
+
+    &::before
+      position: absolute
+      content: ''
+      background-image: url(../img/dropdown-arrow2.svg)
+      background-repeat: no-repeat
+
+      width: 8px
+      height: 5px
+      top: 50%
+      transform: translateY(-50%)
+      right: 16px
+      transition: .3s
+
+.text-box
+  border: none
+  outline: none
+  background-color: rgb(44, 50, 60, 0)
+  position: absolute
+  top: 0
+  left: 0
+  font-size: 12px
+  font-weight: 500
+  width: 100%
+  height: 100%
+  margin-left: 10px
+  cursor: pointer
+
+.text-box::placeholder
+  color: var(--text-light)
+  font-weight: 500
+  opacity: 1
+
+.dropdown
+  &-menu
+    flex-direction: column
+    align-items: flex-start
+    position: absolute
+    top: 24px
+    width: 100%
+    background: var(--bg-wrap-light)
+    padding: 10px
+    display: none
+
+    &__list
+      margin-bottom: 10px
+      border-bottom: 1px solid $border
+      padding-bottom: 10px
+      width: 100%
+      cursor: pointer
+      font-size: 12px
+      font-weight: 500
+
+      &:last-child
+        margin-bottom: 0
+        border-bottom: none
+.active-list
+  position: absolute
+  content: ''
+  width: 24px
+  height: 2px
+  background-color: var(--line)
+  top: 28px
+  left: 0
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+  transition: width 0.3s ease, left 0.3s ease
+  z-index: 2
+.tabcontent
+  // max-width: 326px
+  max-height: 433px
+  overflow-y: scroll
+  scrollbar-width: none
+  scrollbar-color: var(--button-color-light) #DCE1F5
+  scroll-behavior: smooth
+  scroll-snap-type: y
+
+  &-wrapper
+    width: 100%
+  &-price
+    &-span
+      display: flex
+      align-items: center
+      margin-bottom: 4px
+
+    &__span
+      font-size: 12px
+      font-weight: 400
+      line-height: 100%
+      color: $grey
+      width: 62px
+      margin-right: 23px
+
+  &-currency
+    &-span
+      display: flex
+      align-items: center
+      margin-bottom: 12px
+
+    &__span
+      width: 62px
+      font-size: 14px
+      font-weight: 400
+      line-height: 100%
+      color: $grey
+      text-align: right
+      margin-right: 23px
+  &-num
+    display: flex
+    flex-direction: column
+    &__wrap
+      display: flex
+      align-items: center
+      margin-bottom: 14px
+      width: 100%
+      &--1
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 10px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 16px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--2
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 24px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 20px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--3
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 39px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 32px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--4
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 52px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 35px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--5
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 58px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 48px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--6
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 75px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 66px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--7
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 89px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 78px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--8
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 97px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 90px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--9
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 103px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 99px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--10
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 113px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 130px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--11
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 122px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 141px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+      &--12
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          width: 148px
+          height: 26px
+          top: -5px
+          right: 51%
+          background-color: #2BB48A
+          opacity: .2
+          border-top-left-radius: 4px
+          border-bottom-left-radius: 4px
+        &::after
+          position: absolute
+          content: ''
+          width: 148px
+          height: 26px
+          top: -5px
+          left: 50%
+          background-color: #EC5A7D
+          opacity: .2
+          border-top-right-radius: 4px
+          border-bottom-right-radius: 4px
+    &__span
+      width: 62px
+      font-size: 14px
+      font-weight: 400
+      line-height: 100%
+      margin-right: 23px
+    &__black
+      color: $darkblue
+    &__green
+      color: #2BB48A
+    &__red
+      color: #EC5A7D
+
+.span
+  &-right
+    text-align: right
+  &-left
+    text-align: left
+.tabcontent2
+  overflow-y: scroll
+  max-height: 433px
+  scrollbar-width: none
+  scrollbar-color: var(--button-color-light) #DCE1F5
+  scroll-behavior: smooth
+  scroll-snap-type: y
+
+  &-wrapper
+    width: 100%
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 9px
+
+  &-trade
+    &-span
+      display: flex
+      align-items: center
+    &__span
+      display: inline-block
+      color: #AAB9D0
+      &--border
+        padding: 4px 6px
+        color: #fff
+        background-color: #AAB9D0
+        border-radius: 4px
+        font-size: 10px
+        font-weight: 500
+        margin-left: 6px
+  &-num
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 14px
+    &__span
+      font-size: 14px
+.tabcontent3
+  overflow-y: hidden
+  &-wrap
+
+  &-title
+    display: flex
+    align-items: center
+    margin-bottom: 16px
+  &-img
+    width: 32px
+    margin-right: 8px
+  &__title
+    font-size: 20px
+    font-weight: 500
+    text-transform: uppercase
+  &-text
+    font-size: 14px
+    font-weight: 400
+    line-height: 19.6px
+    padding-bottom: 16px
+    border-bottom: 1px solid var(--after)
+  &-info
+    margin-top: 16px
+    padding-bottom: 16px
+    border-bottom: 1px solid var(--after)
+
+  &-desc
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+  &-network
+    margin-top: 16px
+  &-links
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-top: 16px
+    padding-bottom: 8px
+    border-bottom: 1px solid var(--after)
+
+  &-link
+    padding: 10px 16px
+    border-radius: 8px
+    font-size: 12px
+    color: $darkblue
+    background-color: var(--button-color-light)
+    border: 1px solid $darkblue
+    margin-right: 8px
+    margin-bottom: 8px
+    transition: .6s
+    &:hover
+      background-color: #DCE1F5 !important
+  &-list
+    display: flex
+    align-items: center
+    &__item
+      margin-right: 16px
+    &__link
+      display: flex
+.grey-span
+  color: #8594AA
+// WALLET
+.trading
+  &-wallet
+    width: 358px
+
+.wallet
+  &-tabcontent
+    flex-direction: column
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-tabs
+    display: flex
+    align-items: center
+    padding: 4px
+    border-radius: 12px
+    margin-bottom: 12px
+
+  &-tab
+    width: 50%
+    padding-top: 10px
+    padding-bottom: 10px
+    text-align: center
+    font-size: 12px
+    font-weight: 500
+    border-radius: 8px
+    cursor: pointer
+    color: var(--text-light)
+
+  &-wrap
+    padding: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: var(--bg-wrap-light)
+    border-radius: 16px
+    margin-bottom: 12px
+  &-sell
+    padding: 16px 16px 24px 16px
+    margin-bottom: 4px
+  &-receive
+    padding: 12px 16px 16px 16px
+  &-price
+    font-size: 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 16px
+    line-height: 16px
+    &--receive
+      margin-bottom: 12px
+    &__name
+      font-weight: 500
+    &__current
+      color: $grey
+      &--sell
+        margin-left: auto
+        margin-right: 8px
+    &-sell
+      margin-bottom: 12px
+
+    &__span
+      font-size: 32px
+      line-height: 32px
+      background-color: inherit
+      max-width: 232px
+      height: 32px
+      color: $darkblue
+    ::-moz-placeholder,
+    ::-webkit-input-placeholder,
+    :-ms-input-placeholder,
+    ::placeholder
+      color: #8594AA
+      opacity: 1
+    &__grey
+      font-size: 14px
+      display: inline-block
+      margin-left: 12px
+      line-height: 12px
+      margin-right: auto
+      bottom: 2px
+      position: absolute
+      left: 104px
+
+    &__icon
+      width: 20px
+  &-calc
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 16px
+    line-height: 16px
+    &-receive
+      margin: 0
+  &-operator
+    width: 32px
+    height: 32px
+    border-radius: 8px
+    background-color: var(--button-color-light)
+    border: none
+    outline: 1px solid $darkblue
+    transition: .3s
+    &:hover
+      background-color: var(--bg-wrap-light)
+    &__minus
+      position: relative
+      margin-right: 6px
+      margin-left: auto
+      &::before
+        position: absolute
+        content: '-'
+        top: 5px
+        left: 40%
+    &__plus
+      position: relative
+      &::before
+        position: absolute
+        content: '+'
+        top: 6px
+        left: 37%
+        font-size: 16px
+        font-weight: 500
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $grey
+    font-size: 14px
+    line-height: 14px
+    &__icon
+      width: 20px
+      margin-right: auto
+      margin-left: 11px
+      cursor: pointer
+    &__span
+      cursor: pointer
+
+  &-dropdown
+    display: flex
+    align-items: center
+    cursor: pointer
+    height: 32px
+    &__image
+      width: 32px
+      margin-right: 8px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      position: relative
+      height: 100%
+      &::before
+        position: absolute
+        content: ""
+        background-image: url(../img/arrow-wallet.svg)
+        background-repeat: no-repeat
+        background-position: right
+        width: 8px
+        height: 5px
+        top: 8px
+        transform: translateY(-50%)
+        right: 12px
+        transition: 0.3s
+      &--arrow
+        &::before
+          right: 2px
+    &__name
+      font-size: 14px
+      line-height: 14px
+    &__span
+      font-size: 12px
+      color: $grey
+      line-height: 12px
+  &-rate
+    &-tabs
+      display: flex
+      align-items: center
+    &-tab
+      cursor: pointer
+      padding: 10px
+      font-size: 12px
+      font-weight: 400
+      line-height: 100%
+      background-color: var(--button-color-light)
+      width: 76px
+      outline: 1px solid $darkblue
+      border-radius: 8px
+      text-align: center
+      margin-right: 8px
+  &-button
+    padding: 15px
+    background-color: $blue
+    outline: 1px solid $darkblue
+    font-size: 16px
+    font-weight: 500
+    line-height: 16px
+    width: 100%
+  &-before
+    position: relative
+    margin: auto
+    transition: .2s
+    transform: scale(1)
+    &::before
+      position: absolute
+      content: ''
+      width: 36px
+      height: 36px
+      top: -20px
+      left: -16px
+      right: 0
+      bottom: 0
+      background-color: var(--background-color)
+      border-radius: 100%
+      cursor: pointer
+    &::after
+      position: absolute
+      content: ''
+      cursor: pointer
+      width: 28px
+      height: 28px
+      top: -16px
+      left: -12px
+      right: 0
+      bottom: 0
+      background-color: var(--button-color-light)
+      border-radius: 100%
+      background-image: url(../img/arrow-wallet-before.svg)
+      background-repeat: no-repeat
+      background-position: center
+    &:hover
+      transform: scale(1.05)
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(359deg)
+
+.loader
+  animation: spin 2.5s linear infinite
+.active-rate-tab
+  background-color: $darkblue
+  font-weight: 600
+  color: #DCE1F5
+.active-wallet-tab
+  background-color: $darkblue
+  color: $greybtn
+.pole
+  align-items: flex-end
+  position: relative
+  &-input
+    max-width: 120px
+    background-color: inherit
+    height: 32px
+.minus
+  position: relative
+  margin-left: auto
+#text2
+  ::-moz-placeholder,
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder,
+  ::placeholder
+    color: #8594AA !important
+    opacity: 1
+.tab-active
+  color: var(--text-light)
