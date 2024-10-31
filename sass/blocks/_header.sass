@@ -7,10 +7,10 @@
     width: 139px
     height: 25px
     display: flex
-    background-image: url(../img/Logo.svg)
-    background-repeat: no-repeat
+    // background-image: url(../img/Logo.svg)
+    // background-repeat: no-repeat
 
-    background-size: 139px
+    // background-size: 139px
   &-image
     max-width: 139px
 .nav
@@ -113,6 +113,7 @@
     flex-direction: column
     align-items: center
     padding: 16px
+    padding-top: 24px
     background-color: $darkblue
     position: absolute
     top: 25px
@@ -128,7 +129,7 @@
 .dropbtn
   background-image: url(../img/dropdown.svg)
   background-color: $darkblue
-  color: $greybtn
+  color: var(--text-light)
   z-index: 2
   position: relative
   margin-right: 16px
@@ -146,12 +147,11 @@
   &:hover .dropdown-content
     display: flex
 
-
 .dropbtn2
   background-image: url(../img/ethereum.svg)
   position: relative
-  color: $darkblue
-  background-color: #E6EBFF
+  color: var(--text-light)
+  background-color: var(--button-color-light)
   outline: 1px solid $darkblue
   z-index: 2
 
@@ -177,7 +177,8 @@
     flex-direction: column
     align-items: flex-start
     padding: 16px
-    background-color: #E6EBFF
+    padding-top: 24px
+    background-color: var(--button-color-light)
     top: 25px
     right: 0
     z-index: 1
@@ -188,7 +189,7 @@
     z-index: 1
 
   &-link
-    color: $darkblue
+    color: var(--text-light)
     background-image: url(../img/ethereum.svg)
     background-repeat: no-repeat
     background-size: 16px
@@ -216,3 +217,6 @@
   left: 6%
   width: 42px
   transition: width 0.3s ease, left 0.3s ease
+#logo-image
+  fill: #ffff
+  stroke: #ffff
